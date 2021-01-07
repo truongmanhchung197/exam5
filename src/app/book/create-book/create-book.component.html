@@ -1,0 +1,24 @@
+<h1>Thêm sách mới</h1>
+<form (ngSubmit)="createBook()" >
+  <table>
+    <tr>
+      <td>Tên</td>
+      <td><input type="text" size="50" name = "title" [(ngModel)]="book.title"></td>
+    </tr>
+    <tr>
+      <td>Tác giả</td>
+      <td><input type="text" size="50" name = "author" [(ngModel)]="book.author"></td>
+    </tr>
+    <tr>
+      <td>Mô tả</td>
+      <td><textarea cols="52" name = "description" [(ngModel)]="book.description"></textarea></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>
+        <button>Thêm sách</button>
+        <button><a [routerLink]="['/list-book']">Thoát</a></button>
+      </td>
+    </tr>
+  </table>
+</form>

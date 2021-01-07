@@ -1,0 +1,7 @@
+<h1>Xóa sách</h1>
+<p>Tên sách: {{book.title}}</p>
+<p>Tác giả: {{book.author}}</p>
+<p>Mô tả: </p>
+<p>{{book.description}}</p>
+<button (click)="deleteBook(id)">Xóa sách</button>
+<button><a [routerLink]="['/list-book']">Thoát</a></button>
